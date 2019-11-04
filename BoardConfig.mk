@@ -64,6 +64,11 @@ BOARD_HAVE_BLUETOOTH_BCM := true
 # Encryption
 TARGET_KEYMASTER_SKIP_WAITING_FOR_QSEE := true
 
+# Filesystem
+BOARD_ROOT_EXTRA_FOLDERS := efs firmware firmware-modem
+BOARD_ROOT_EXTRA_SYMLINKS := /data/tombstones:/tombstones
+TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
+
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
