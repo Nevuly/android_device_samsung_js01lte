@@ -1,4 +1,4 @@
-Copyright 2017-2019 - The LineageOS Project
+Copyright 2017-2020 - The LineageOS Project
 Copyright 2016 - The CyanogenMod Project
 
 Device configuration for Samsung Galaxy J (SC-02F).
@@ -12,14 +12,12 @@ WORK IN PROGRESS. WILL EAT YOUR CAT.
   <?xml version="1.0" encoding="UTF-8"?>
   <manifest>
 
-    <project name="LineageOS/android_hardware_samsung" path="hardware/samsung" remote="github" />
-    <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="github" />
+    <project name="LineageOS/android_hardware_samsung" path="hardware/samsung" remote="github" revision="lineage-17.1" />
+    <project name="LineageOS/android_device_samsung_qcom-common" path="device/samsung/qcom-common" remote="github" revision="lineage-17.1" />
 
-    <project name="LineageOS/android_device_samsung_qcom-common" path="device/samsung/qcom-common" remote="github" />
-    <project name="LineageOS/android_device_samsung_msm8974-common" path="device/samsung/msm8974-common" remote="github" />
-
-    <project name="kyasu/android_kernel_samsung_msm8974" path="kernel/samsung/msm8974" remote="github" />
-    <project name="kyasu/android_device_samsung_js01lte" path="device/samsung/js01lte" remote="github" />
-    <project name="kyasu/android_vendor_samsung_js01lte" path="vendor/samsung/js01lte" remote="github" />
+    <project name="kyasu/android_device_samsung_msm8974-common" path="device/samsung/msm8974-common" remote="github" revision="lineage-17.1-test" />
+    <project name="kyasu/android_kernel_samsung_msm8974" path="kernel/samsung/msm8974" remote="github" revision="lineage-17.1-test" />
+    <project name="kyasu/android_device_samsung_js01lte" path="device/samsung/js01lte" remote="github" revision="lineage-17.1-test" />
+    <project name="kyasu/android_vendor_samsung_js01lte" path="vendor/samsung/js01lte" remote="github" revision="lineage-17.1-test" />
 
   </manifest>
